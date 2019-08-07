@@ -1,0 +1,141 @@
+﻿.table-content{
+    height: 300px;
+    overflow: auto;
+}
+
+.table-content .main-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .table-content .main-table th {
+        border: 1px solid #d0d0d0;
+        height: 50px;
+        background-color: #d0d0d0;
+    }
+
+    .table-content .main-table td {
+        border: 1px solid #d0d0d0;
+        height: 50px;
+    }
+
+.row-selected{
+    background-color: #00ffff !important;
+}
+
+.check-box {
+    width: 28px;
+    background: url('../../Contents/icons/check.png') no-repeat;
+}
+
+.select, .tick {
+    background-color: #ff0000 !important;
+}
+
+.uncheck {
+    background: url('../../Contents/icons/uncheck.png') no-repeat center;
+    width: 24px;
+    height: 52px;
+}
+.table-content .main-table tr:nth-child(even) {
+    background: #CCC
+}
+
+.table-content .main-table tr:nth-child(odd) {
+    background: #FFF
+}
+
+#dialog {
+    display: none;
+}
+/*
+    Chỉnh sửa giao diện dialog thêm mới phiếu thu chi
+*/
+
+#dialog .contain {
+    width: 100%;
+
+}
+
+    #dialog .contain.input-data {
+        height: 80%;
+        
+        display: flex;
+    }
+    #dialog .contain.button-data {
+        height: 20%;
+        
+    }
+    /*
+        Chỉnh sửa giao diện input-data
+    */
+    .input-data .sub-data {
+        width: 50%;
+        
+    }
+        .input-data .sub-data .input-title {
+            display: flex;
+            margin-bottom: 8px;
+            height: 40px;
+            align-items: center;
+        }
+        .input-data .sub-data .input-title .title {
+            width: 30%;
+        }
+            .input-data .sub-data .input-title .input {
+                width: 70%;
+            }
+            .input-data .sub-data .input-title .input input {
+                height: 32px;
+                border-radius: 3px;
+                border: 1px solid #808080;
+                padding: 0 8px;
+            }
+/*
+    Chỉnh sửa giao diện phần button-data
+*/
+.button-data button {
+    height: 32px;
+    width: 70px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+.button-data button.save {
+    background-color: #026b97;
+    color:#fff;
+}
+    .button-data button.cancel {
+        background-color: red;
+        color: #fff;
+    }
+
+.detail-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 20px;
+    background-color: #e5e3e3;
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .detail-table th {
+        border: 1px solid #d0d0d0;
+        padding: 14px;
+    }
+    
+#load-data {
+
+    background: url('../../Contents/images/loader.gif') no-repeat center #fff;
+    position: absolute;
+    height: 300px;
+    top: 92px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.5;
+    display: none;
+}
